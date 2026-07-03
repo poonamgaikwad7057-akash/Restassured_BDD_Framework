@@ -5,7 +5,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/poonamgaikwad7057-akash/Restassured_BDD_Framework.git'
+                git branch: 'main',
+                    url: 'https://github.com/poonamgaikwad7057-akash/Restassured_BDD_Framework.git'
             }
         }
 
